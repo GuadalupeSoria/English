@@ -419,7 +419,7 @@ export const vocabularyCategories: VocabularyCategory[] = [
   },
   {
     id: 'tech',
-    name: 'Programming & Technology',
+    name: 'Technology',
     icon: 'Code',
     items: [
       { english: 'code', spanish: 'código', pronunciation: 'koud', category: 'tech' },

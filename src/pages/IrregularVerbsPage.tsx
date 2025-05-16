@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Layout from '../components/layout/Layout';
-import { Search, Volume2 } from 'lucide-react';
+import { Search, Volume2, BookOpen } from 'lucide-react';
+import Button from '../components/common/Button';
+import IrregularVerbsPractice from '../components/verbs/IrregularVerbsPractice';
 
 interface IrregularVerb {
   infinitive: string;
@@ -376,6 +378,7 @@ const irregularVerbs: IrregularVerb[] = [
 
 const IrregularVerbsPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [showPractice, setShowPractice] = useState(false);
 
   const filteredVerbs = irregularVerbs.filter(verb =>
     verb.infinitive.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -394,95 +397,120 @@ const IrregularVerbsPage: React.FC = () => {
     <Layout>
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Irregular Verbs</h1>
-        <p className="text-gray-700 mb-8">
+        <p className="text-gray-700 mb-4">
           Most common irregular verbs in English. These verbs don't follow the regular pattern of adding "-ed" for past tense and participle forms.
           Click on the speaker icon to hear the pronunciation.
         </p>
-
-        <div className="mb-6 relative">
-          <Search className="absolute left-3 top-3 text-gray-400" size={20} />
-          <input
-            type="text"
-            placeholder="Search verbs in English or Spanish..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-          />
+        
+        <div className="flex justify-between items-center mb-8">
+          {showPractice ? (
+            <Button 
+              variant="outline" 
+              onClick={() => setShowPractice(false)}
+              className="flex items-center"
+            >
+              ← Back to Verb List
+            </Button>
+          ) : (
+            <Button 
+              onClick={() => setShowPractice(true)}
+              className="flex items-center"
+            >
+              <BookOpen size={18} className="mr-2" /> Practice Irregular Verbs
+            </Button>
+          )}
         </div>
 
-        <div className="bg-white rounded-lg shadow overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Base Form (Infinitive)
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Past Simple
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Past Participle
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Spanish
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                {filteredVerbs.map((verb, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
-                        <div>
-                          <div className="text-sm font-medium text-gray-900">{verb.infinitive}</div>
-                          <div className="text-sm text-gray-500 italic">/{verb.pronunciation.infinitive}/</div>
-                        </div>
-                        <button
-                          onClick={() => playPronunciation(verb.infinitive)}
-                          className="ml-2 text-primary hover:text-primary-dark"
-                        >
-                          <Volume2 size={16} />
-                        </button>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
-                        <div>
-                          <div className="text-sm font-medium text-gray-900">{verb.past}</div>
-                          <div className="text-sm text-gray-500 italic">/{verb.pronunciation.past}/</div>
-                        </div>
-                        <button
-                          onClick={() => playPronunciation(verb.past.split('/')[0])}
-                          className="ml-2 text-primary hover:text-primary-dark"
-                        >
-                          <Volume2 size={16} />
-                        </button>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="flex items-center">
-                        <div>
-                          <div className="text-sm font-medium text-gray-900">{verb.participle}</div>
-                          <div className="text-sm text-gray-500 italic">/{verb.pronunciation.participle}/</div>
-                        </div>
-                        <button
-                          onClick={() => playPronunciation(verb.participle.split('/')[0])}
-                          className="ml-2 text-primary hover:text-primary-dark"
-                        >
-                          <Volume2 size={16} />
-                        </button>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                      {verb.spanish}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+        {showPractice ? (
+          <IrregularVerbsPractice />
+        ) : (
+          <>
+            <div className="mb-6 relative">
+              <Search className="absolute left-3 top-3 text-gray-400" size={20} />
+              <input
+                type="text"
+                placeholder="Search verbs in English or Spanish..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              />
+            </div>
+
+            <div className="bg-white rounded-lg shadow overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gray-50">
+                    <tr>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Base Form (Infinitive)
+                      </th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Past Simple
+                      </th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Past Participle
+                      </th>
+                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Spanish
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {filteredVerbs.map((verb, index) => (
+                      <tr key={index} className="hover:bg-gray-50">
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <div className="flex items-center">
+                            <div>
+                              <div className="text-sm font-medium text-gray-900">{verb.infinitive}</div>
+                              <div className="text-sm text-gray-500 italic">/{verb.pronunciation.infinitive}/</div>
+                            </div>
+                            <button
+                              onClick={() => playPronunciation(verb.infinitive)}
+                              className="ml-2 text-primary hover:text-primary-dark"
+                            >
+                              <Volume2 size={16} />
+                            </button>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <div className="flex items-center">
+                            <div>
+                              <div className="text-sm font-medium text-gray-900">{verb.past}</div>
+                              <div className="text-sm text-gray-500 italic">/{verb.pronunciation.past}/</div>
+                            </div>
+                            <button
+                              onClick={() => playPronunciation(verb.past.split('/')[0])}
+                              className="ml-2 text-primary hover:text-primary-dark"
+                            >
+                              <Volume2 size={16} />
+                            </button>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <div className="flex items-center">
+                            <div>
+                              <div className="text-sm font-medium text-gray-900">{verb.participle}</div>
+                              <div className="text-sm text-gray-500 italic">/{verb.pronunciation.participle}/</div>
+                            </div>
+                            <button
+                              onClick={() => playPronunciation(verb.participle.split('/')[0])}
+                              className="ml-2 text-primary hover:text-primary-dark"
+                            >
+                              <Volume2 size={16} />
+                            </button>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {verb.spanish}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </Layout>
   );

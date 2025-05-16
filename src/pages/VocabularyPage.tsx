@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { vocabularyCategories } from '../data/vocabulary';
 import Card from '../components/common/Card';
-import { Search, Filter } from 'lucide-react';
+import { Search, BookOpen } from 'lucide-react';
 import Layout from '../components/layout/Layout';
 import * as LucideIcons from 'lucide-react';
+import VocabularyPractice from '../components/vocabulary/VocabularyPractice';
+import Button from '../components/common/Button';
 
 const VocabularyPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [showPractice, setShowPractice] = useState(false);
 
   // Dynamically get icon component
+  // Using 'any' here is necessary due to the dynamic nature of icon lookup
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getIconComponent = (iconName: string) => {
     const IconComponent = (LucideIcons as any)[iconName];
     return IconComponent ? <IconComponent size={24} /> : null;
@@ -19,11 +24,32 @@ const VocabularyPage: React.FC = () => {
     <Layout>
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Vocabulary</h1>
-        <p className="text-gray-700 mb-8">
+        <p className="text-gray-700 mb-4">
           Expand your English vocabulary with these essential words organized by categories. Each word includes Spanish translation and pronunciation guide.
         </p>
         
-        {!selectedCategory ? (
+        <div className="flex justify-between items-center mb-8">
+          {showPractice ? (
+            <Button 
+              variant="outline" 
+              onClick={() => setShowPractice(false)}
+              className="flex items-center"
+            >
+              ← Back to Vocabulary
+            </Button>
+          ) : (
+            <Button 
+              onClick={() => setShowPractice(true)}
+              className="flex items-center"
+            >
+              <BookOpen size={18} className="mr-2" /> Practice Translation
+            </Button>
+          )}
+        </div>
+
+        {showPractice ? (
+          <VocabularyPractice />
+        ) : !selectedCategory ? (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {vocabularyCategories.map((category) => (
               <Card 
