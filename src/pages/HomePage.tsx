@@ -81,9 +81,9 @@ const HomePage: React.FC = () => {
                   <p className="text-gray-600 mb-4 flex-grow">
                     {feature.description}
                   </p>
-                  <Button variant="ghost" className="mt-auto">
+                  {/* <Button variant="ghost" className="mt-auto">
                     Explore
-                  </Button>
+                  </Button> */}
                 </Card>
               </Link>
             ))}
@@ -92,18 +92,20 @@ const HomePage: React.FC = () => {
       </section>
 
       <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="max-w-4xl mx-auto px-4 text-center flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Ready to improve your English?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             Start practicing now and track your progress
           </p>
+          <div className='flex justify-center'>
           <Link to="/practice">
             <Button size="lg">
               Begin Practice
             </Button>
           </Link>
+          </div>
         </div>
       </section>
     </Layout>

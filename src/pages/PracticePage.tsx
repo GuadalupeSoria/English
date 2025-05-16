@@ -19,10 +19,8 @@ const PracticePage: React.FC = () => {
     if (selectedCategory) {
       let filtered;
       if (selectedCategory === 'vocabulary') {
-        // For vocabulary, include all vocabulary-related categories
-        filtered = quizQuestions.filter(q => 
-          ['colors', 'food', 'family', 'rooms', 'objects'].includes(q.category)
-        );
+        // Include all questions with ID starting with 'voc'
+        filtered = quizQuestions.filter(q => q.id.startsWith('voc'));
       } else {
         filtered = quizQuestions.filter(q => q.category === selectedCategory);
       }
@@ -90,10 +88,10 @@ const PracticePage: React.FC = () => {
               {categories.map((category) => (
                 <Card 
                   key={category.id || 'mixed'}
-                  className="flex items-center p-4 cursor-pointer hover:bg-gray-50"
+                  className="flex items-center justify-center p-4 cursor-pointer hover:bg-gray-50"
                   onClick={() => setSelectedCategory(category.id)}
                 >
-                  <div className="bg-primary bg-opacity-10 p-3 rounded-full mr-3">
+                  <div className="flex justify-center text-pink-700 bg-opacity-10 p-3 rounded-full mr-3">
                     {category.icon}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800">{category.name}</h3>

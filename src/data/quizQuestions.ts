@@ -119,6 +119,65 @@ export const quizQuestions: QuizQuestion[] = [
     category: 'present-simple'
   },
 
+  {
+    id: 'ps11',
+    type: 'multiple-choice',
+    question: 'Choose the correct Present Simple negative:',
+    options: [
+      'She not drink coffee.',
+      'She doesn\'t drinks coffee.',
+      'She doesn\'t drink coffee.',
+      'She don\'t drink coffee.'
+    ],
+    correctAnswer: 'She doesn\'t drink coffee.',
+    explanation: 'Para negaciones en Present Simple con he/she/it usamos "doesn\'t + verbo base".',
+    category: 'present-simple'
+  },
+  {
+    id: 'ps12',
+    type: 'fill-blank',
+    question: 'Complete with Present Simple: "My sister _____ (teach) English every day."',
+    correctAnswer: 'teaches',
+    explanation: 'Con he/she/it agregamos -s/-es al verbo en Present Simple.',
+    category: 'present-simple'
+  },
+  {
+    id: 'ps13',
+    type: 'multiple-choice',
+    question: 'Which sentence expresses a routine?',
+    options: [
+      'I am eating breakfast now.',
+      'I eat breakfast at 8 AM every day.',
+      'I eating breakfast every day.',
+      'I does eat breakfast every day.'
+    ],
+    correctAnswer: 'I eat breakfast at 8 AM every day.',
+    explanation: 'Present Simple se usa para rutinas y hábitos.',
+    category: 'present-simple'
+  },
+  {
+    id: 'ps14',
+    type: 'true-false',
+    question: 'This sentence is correct: "She don\'t like pizza."',
+    correctAnswer: 'false',
+    explanation: 'Incorrecto. Con "she" debemos usar "doesn\'t like".',
+    category: 'present-simple'
+  },
+  {
+    id: 'ps15',
+    type: 'multiple-choice',
+    question: 'Select the correct habitual action:',
+    options: [
+      'He is playing tennis right now.',
+      'He plays tennis every weekend.',
+      'He playing tennis always.',
+      'He do plays tennis.'
+    ],
+    correctAnswer: 'He plays tennis every weekend.',
+    explanation: 'Present Simple se usa para acciones habituales o rutinas.',
+    category: 'present-simple'
+  },
+
   // Present Continuous Questions (10)
   {
     id: 'pc1',
@@ -228,6 +287,66 @@ export const quizQuestions: QuizQuestion[] = [
     question: 'Complete: "_____ you _____ (wait) for someone?"',
     correctAnswer: ['Are', 'waiting'],
     explanation: 'Questions in Present Continuous use "Am/Is/Are + subject + verb-ing".',
+    category: 'present-continuous'
+  },
+
+  // Present Continuous Questions (después de pc10)
+  {
+    id: 'pc11',
+    type: 'multiple-choice',
+    question: 'What\'s happening right now?',
+    options: [
+      'They work in the garden.',
+      'They are working in the garden.',
+      'They working in the garden.',
+      'They do working in the garden.'
+    ],
+    correctAnswer: 'They are working in the garden.',
+    explanation: 'Present Continuous (are + verbo-ing) se usa para acciones que están ocurriendo ahora.',
+    category: 'present-continuous'
+  },
+  {
+    id: 'pc12',
+    type: 'multiple-choice',
+    question: 'Look at the picture! The boy...',
+    options: [
+      'cry now.',
+      'is crying now.',
+      'crying now.',
+      'does crying now.'
+    ],
+    correctAnswer: 'is crying now.',
+    explanation: 'Para describir una acción en progreso usamos Present Continuous (is + verbo-ing).',
+    category: 'present-continuous'
+  },
+  {
+    id: 'pc13',
+    type: 'fill-blank',
+    question: 'Right now, we _____ (watch) a movie.',
+    correctAnswer: 'are watching',
+    explanation: 'Para acciones en progreso usamos are + verbo-ing.',
+    category: 'present-continuous'
+  },
+  {
+    id: 'pc14',
+    type: 'multiple-choice',
+    question: 'Choose the correct question form for now:',
+    options: [
+      'What do you do?',
+      'What are you doing?',
+      'What you are doing?',
+      'What doing you are?'
+    ],
+    correctAnswer: 'What are you doing?',
+    explanation: 'Para preguntar qué está pasando ahora usamos Present Continuous.',
+    category: 'present-continuous'
+  },
+  {
+    id: 'pc15',
+    type: 'true-false',
+    question: 'This sentence is correct for an action happening now: "They working on the project."',
+    correctAnswer: 'false',
+    explanation: 'Incorrecto. Falta el verbo "are". La forma correcta es "They are working on the project."',
     category: 'present-continuous'
   },
 
@@ -343,6 +462,118 @@ export const quizQuestions: QuizQuestion[] = [
     category: 'present-perfect'
   },
 
+  // Present Perfect Questions (10 nuevas después de pp10)
+  {
+    id: 'pp11',
+    type: 'multiple-choice',
+    question: 'Choose the correct Present Perfect form:',
+    options: [
+      'I never see that movie.',
+      'I have never saw that movie.',
+      'I have never seen that movie.',
+      'I never have see that movie.'
+    ],
+    correctAnswer: 'I have never seen that movie.',
+    explanation: 'Present Perfect con never usa "have/has + never + participio pasado".',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp12',
+    type: 'fill-blank',
+    question: 'Complete: "She _____ (live) here since 2020."',
+    correctAnswer: 'has lived',
+    explanation: 'Con "since" y un punto específico en el pasado, usamos Present Perfect.',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp13',
+    type: 'multiple-choice',
+    question: 'Select the correct form:',
+    options: [
+      'Have you ever visit Paris?',
+      'Have you ever visited Paris?',
+      'Has you ever visited Paris?',
+      'Have you ever visiting Paris?'
+    ],
+    correctAnswer: 'Have you ever visited Paris?',
+    explanation: 'Las preguntas con "ever" usan "Have/Has + sujeto + ever + participio pasado".',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp14',
+    type: 'true-false',
+    question: 'This sentence is correct: "I\'ve known him for 10 years."',
+    correctAnswer: 'true',
+    explanation: 'Present Perfect con "for" expresa duración hasta el presente.',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp15',
+    type: 'multiple-choice',
+    question: 'Choose the correct negative form:',
+    options: [
+      'They not have seen it.',
+      'They haven\'t saw it.',
+      'They haven\'t seen it.',
+      'They haven\'t seeing it.'
+    ],
+    correctAnswer: 'They haven\'t seen it.',
+    explanation: 'La negación usa "haven\'t/hasn\'t + participio pasado".',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp16',
+    type: 'fill-blank',
+    question: 'Complete: "He _____ (just/arrive) home."',
+    correctAnswer: 'has just arrived',
+    explanation: 'Con "just" usamos "has/have + just + participio pasado" para acciones recientes.',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp17',
+    type: 'multiple-choice',
+    question: 'Which sentence is correct?',
+    options: [
+      'I\'ve been to London last year.',
+      'I\'ve been to London.',
+      'I\'ve gone to London yesterday.',
+      'I\'ve being to London.'
+    ],
+    correctAnswer: 'I\'ve been to London.',
+    explanation: 'Present Perfect NO se usa con expresiones de tiempo pasado específico.',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp18',
+    type: 'fill-blank',
+    question: 'Complete: "_____ you ever _____ (eat) sushi?"',
+    correctAnswer: ['Have', 'eaten'],
+    explanation: 'Preguntas con "ever" usan "Have/Has + sujeto + ever + participio pasado".',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp19',
+    type: 'multiple-choice',
+    question: 'Choose the correct form:',
+    options: [
+      'She has finish her homework.',
+      'She have finished her homework.',
+      'She has finished her homework.',
+      'She has finishing her homework.'
+    ],
+    correctAnswer: 'She has finished her homework.',
+    explanation: 'Con "she" usamos "has + participio pasado".',
+    category: 'present-perfect'
+  },
+  {
+    id: 'pp20',
+    type: 'true-false',
+    question: 'This sentence is correct: "They\'ve lived here since five years."',
+    correctAnswer: 'false',
+    explanation: 'Con períodos de tiempo usamos "for", no "since". Debería ser "for five years".',
+    category: 'present-perfect'
+  },
+
   // Past Simple Questions (10)
   {
     id: 'pts1',
@@ -452,6 +683,118 @@ export const quizQuestions: QuizQuestion[] = [
     question: 'Complete: "_____ you _____ (eat) lunch yet?"',
     correctAnswer: ['Did', 'eat'],
     explanation: 'Questions in Past Simple use "Did + subject + base form".',
+    category: 'past-simple'
+  },
+
+  // Past Simple Questions (10 nuevas después de pts10)
+  {
+    id: 'pts11',
+    type: 'multiple-choice',
+    question: 'Choose the correct Past Simple form:',
+    options: [
+      'She writed the letter yesterday.',
+      'She wrote the letter yesterday.',
+      'She has wrote the letter yesterday.',
+      'She did wrote the letter yesterday.'
+    ],
+    correctAnswer: 'She wrote the letter yesterday.',
+    explanation: 'Write es un verbo irregular: write-wrote-written.',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts12',
+    type: 'fill-blank',
+    question: 'Complete: "Last summer, I _____ (travel) to Spain."',
+    correctAnswer: 'traveled',
+    explanation: 'Los verbos regulares agregan -ed en Past Simple.',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts13',
+    type: 'multiple-choice',
+    question: 'Select the correct negative form:',
+    options: [
+      'I not went.',
+      'I didn\'t went.',
+      'I didn\'t go.',
+      'I no went.'
+    ],
+    correctAnswer: 'I didn\'t go.',
+    explanation: 'La negación en Past Simple usa "didn\'t + verbo base".',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts14',
+    type: 'fill-blank',
+    question: 'Complete: "_____ you _____ (see) the movie last night?"',
+    correctAnswer: ['Did', 'see'],
+    explanation: 'Preguntas en Past Simple usan "Did + sujeto + verbo base".',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts15',
+    type: 'multiple-choice',
+    question: 'Which is correct?',
+    options: [
+      'They goed to the party.',
+      'They went to the party.',
+      'They did went to the party.',
+      'They have went to the party.'
+    ],
+    correctAnswer: 'They went to the party.',
+    explanation: 'Go es un verbo irregular: go-went-gone.',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts16',
+    type: 'true-false',
+    question: 'This sentence is correct: "Did you went to the store?"',
+    correctAnswer: 'false',
+    explanation: 'Después de "did" usamos el verbo base. Debería ser "Did you go".',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts17',
+    type: 'multiple-choice',
+    question: 'Choose the correct form:',
+    options: [
+      'She didn\'t wanted to go.',
+      'She not wanted to go.',
+      'She didn\'t want to go.',
+      'She didn\'t wants to go.'
+    ],
+    correctAnswer: 'She didn\'t want to go.',
+    explanation: 'En negativas, después de "didn\'t" usamos el verbo base.',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts18',
+    type: 'fill-blank',
+    question: 'Complete: "When _____ (be) the last time you saw her?"',
+    correctAnswer: 'was',
+    explanation: '"Be" es irregular: am/is/are - was/were.',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts19',
+    type: 'multiple-choice',
+    question: 'Which sentence happened in the past?',
+    options: [
+      'I am eating dinner.',
+      'I have eaten dinner.',
+      'I ate dinner last night.',
+      'I eat dinner.'
+    ],
+    correctAnswer: 'I ate dinner last night.',
+    explanation: 'Past Simple se usa para acciones completadas en el pasado.',
+    category: 'past-simple'
+  },
+  {
+    id: 'pts20',
+    type: 'true-false',
+    question: 'This sentence is correct: "They was at home yesterday."',
+    correctAnswer: 'false',
+    explanation: 'Con "they" usamos "were". Debería ser "They were at home yesterday".',
     category: 'past-simple'
   },
 
@@ -567,6 +910,118 @@ export const quizQuestions: QuizQuestion[] = [
     category: 'past-continuous'
   },
 
+  // Past Continuous Questions (10 nuevas después de ptc10)
+  {
+    id: 'ptc11',
+    type: 'multiple-choice',
+    question: 'What were you doing at 8 PM yesterday?',
+    options: [
+      'I was study.',
+      'I were studying.',
+      'I was studying.',
+      'I studying.'
+    ],
+    correctAnswer: 'I was studying.',
+    explanation: 'Past Continuous usa "was/were + verbo-ing".',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc12',
+    type: 'fill-blank',
+    question: 'While he _____ (sleep), someone broke into the house.',
+    correctAnswer: 'was sleeping',
+    explanation: 'Past Continuous describe una acción en progreso en el pasado.',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc13',
+    type: 'multiple-choice',
+    question: 'Choose the correct negative form:',
+    options: [
+      'She wasn\'t studying when I called.',
+      'She weren\'t studying when I called.',
+      'She didn\'t studying when I called.',
+      'She not was studying when I called.'
+    ],
+    correctAnswer: 'She wasn\'t studying when I called.',
+    explanation: 'La negación usa "wasn\'t/weren\'t + verbo-ing".',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc14',
+    type: 'true-false',
+    question: 'This sentence is correct: "They were watching TV when the phone rang."',
+    correctAnswer: 'true',
+    explanation: 'Past Continuous (were watching) con Past Simple (rang) describe una interrupción.',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc15',
+    type: 'multiple-choice',
+    question: 'Select the correct question form:',
+    options: [
+      'What you were doing?',
+      'What was you doing?',
+      'What were you doing?',
+      'What did you doing?'
+    ],
+    correctAnswer: 'What were you doing?',
+    explanation: 'Preguntas usan "Was/Were + sujeto + verbo-ing".',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc16',
+    type: 'fill-blank',
+    question: 'At 3 PM yesterday, we _____ (have) lunch.',
+    correctAnswer: 'were having',
+    explanation: 'Para una acción en progreso en un momento específico del pasado.',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc17',
+    type: 'multiple-choice',
+    question: 'Which shows two simultaneous past actions?',
+    options: [
+      'While I cooked, she watched TV.',
+      'While I was cooking, she was watching TV.',
+      'While I was cook, she was watch TV.',
+      'While I cooking, she watching TV.'
+    ],
+    correctAnswer: 'While I was cooking, she was watching TV.',
+    explanation: 'Past Continuous en ambas partes para acciones simultáneas.',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc18',
+    type: 'true-false',
+    question: 'This is correct: "I were reading when she called."',
+    correctAnswer: 'false',
+    explanation: 'Con "I" usamos "was", no "were". Debería ser "I was reading".',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc19',
+    type: 'fill-blank',
+    question: 'Complete: "_____ it _____ (rain) when you left?"',
+    correctAnswer: ['Was', 'raining'],
+    explanation: 'Preguntas usan "Was/Were + sujeto + verbo-ing".',
+    category: 'past-continuous'
+  },
+  {
+    id: 'ptc20',
+    type: 'multiple-choice',
+    question: 'Choose the correct form:',
+    options: [
+      'The baby slept when we arrived.',
+      'The baby was sleeping when we arrived.',
+      'The baby were sleeping when we arrived.',
+      'The baby sleeping when we arrived.'
+    ],
+    correctAnswer: 'The baby was sleeping when we arrived.',
+    explanation: 'Past Continuous para una acción en progreso interrumpida por otra.',
+    category: 'past-continuous'
+  },
+
   // Past Perfect Questions (10)
   {
     id: 'ptp1',
@@ -676,6 +1131,118 @@ export const quizQuestions: QuizQuestion[] = [
     question: 'Complete: "_____ you _____ (ever/visit) Paris before that trip?"',
     correctAnswer: ['Had', 'ever visited'],
     explanation: 'Questions with "ever" use "Had + subject + ever + past participle".',
+    category: 'past-perfect'
+  },
+
+  // Past Perfect Questions (10 nuevas después de ptp10)
+  {
+    id: 'ptp11',
+    type: 'multiple-choice',
+    question: 'Choose the correct Past Perfect sentence:',
+    options: [
+      'When I arrived, they left.',
+      'When I arrived, they had left.',
+      'When I arrived, they have left.',
+      'When I arrived, they were left.'
+    ],
+    correctAnswer: 'When I arrived, they had left.',
+    explanation: 'Past Perfect (had left) describe una acción que ocurrió antes de otra acción pasada (arrived).',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp12',
+    type: 'fill-blank',
+    question: 'By the time we got to the station, the train _____ (leave).',
+    correctAnswer: 'had left',
+    explanation: 'Past Perfect indica que una acción ocurrió antes que otra en el pasado.',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp13',
+    type: 'multiple-choice',
+    question: 'Select the correct negative form:',
+    options: [
+      'She not had finished.',
+      'She hadn\'t finished.',
+      'She didn\'t had finished.',
+      'She hadn\'t finish.'
+    ],
+    correctAnswer: 'She hadn\'t finished.',
+    explanation: 'La negación usa "hadn\'t + participio pasado".',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp14',
+    type: 'true-false',
+    question: 'This sentence is correct: "They had never saw such a beautiful sunset before."',
+    correctAnswer: 'false',
+    explanation: 'Debe usar el participio pasado. Correcto: "had never seen".',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp15',
+    type: 'multiple-choice',
+    question: 'Choose the correct question form:',
+    options: [
+      'Had they finished before you arrived?',
+      'Did they had finished before you arrived?',
+      'Have they had finished before you arrived?',
+      'Had they finish before you arrived?'
+    ],
+    correctAnswer: 'Had they finished before you arrived?',
+    explanation: 'Preguntas en Past Perfect comienzan con "Had".',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp16',
+    type: 'fill-blank',
+    question: 'She _____ (never/be) to Paris before that trip.',
+    correctAnswer: 'had never been',
+    explanation: 'Past Perfect con "never" usa "had + never + participio pasado".',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp17',
+    type: 'multiple-choice',
+    question: 'Which sentence shows the correct sequence?',
+    options: [
+      'After she finished her work, she went home.',
+      'After she had finished her work, she went home.',
+      'After she have finished her work, she went home.',
+      'After she was finished her work, she went home.'
+    ],
+    correctAnswer: 'After she had finished her work, she went home.',
+    explanation: 'Past Perfect (had finished) para la acción más antigua, Past Simple (went) para la más reciente.',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp18',
+    type: 'true-false',
+    question: 'This is correct: "I had studied English before I moved to London."',
+    correctAnswer: 'true',
+    explanation: 'Past Perfect correcto para una acción que ocurrió antes de otra en el pasado.',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp19',
+    type: 'fill-blank',
+    question: 'Complete: "_____ you _____ (hear) that song before?"',
+    correctAnswer: ['Had', 'heard'],
+    explanation: 'Preguntas usan "Had + sujeto + participio pasado".',
+    category: 'past-perfect'
+  },
+  {
+    id: 'ptp20',
+    type: 'multiple-choice',
+    question: 'Choose the correct form:',
+    options: [
+      'He had spoke to her before the meeting.',
+      'He had spoken to her before the meeting.',
+      'He had speaking to her before the meeting.',
+      'He had speaks to her before the meeting.'
+    ],
+    correctAnswer: 'He had spoken to her before the meeting.',
+    explanation: 'Past Perfect requiere el participio pasado (spoken).',
     category: 'past-perfect'
   },
 
@@ -791,6 +1358,118 @@ export const quizQuestions: QuizQuestion[] = [
     category: 'future-simple'
   },
 
+  // Future Simple Questions (10 nuevas después de fs10)
+  {
+    id: 'fs11',
+    type: 'multiple-choice',
+    question: 'Choose the correct prediction:',
+    options: [
+      'It rains tomorrow.',
+      'It will rains tomorrow.',
+      'It will rain tomorrow.',
+      'It is will rain tomorrow.'
+    ],
+    correctAnswer: 'It will rain tomorrow.',
+    explanation: 'Future Simple usa "will + verbo base" para predicciones.',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs12',
+    type: 'fill-blank',
+    question: 'I promise I _____ (help) you tomorrow.',
+    correctAnswer: 'will help',
+    explanation: 'Future Simple con "will" para promesas.',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs13',
+    type: 'multiple-choice',
+    question: 'Select the correct negative form:',
+    options: [
+      'She not will come.',
+      'She will not comes.',
+      'She will not come.',
+      'She won\'t coming.'
+    ],
+    correctAnswer: 'She will not come.',
+    explanation: 'La negación usa "will not/won\'t + verbo base".',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs14',
+    type: 'true-false',
+    question: 'This sentence is correct: "Will you helps me?"',
+    correctAnswer: 'false',
+    explanation: 'Después de "will" usamos el verbo base. Correcto: "Will you help me?"',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs15',
+    type: 'multiple-choice',
+    question: 'Which is a spontaneous decision?',
+    options: [
+      'I\'m going to answer the phone.',
+      'I\'ll answer the phone!',
+      'I answer the phone.',
+      'I answering the phone.'
+    ],
+    correctAnswer: 'I\'ll answer the phone!',
+    explanation: '"will" se usa para decisiones espontáneas.',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs16',
+    type: 'fill-blank',
+    question: '_____ you _____ (attend) the meeting next week?',
+    correctAnswer: ['Will', 'attend'],
+    explanation: 'Preguntas usan "Will + sujeto + verbo base".',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs17',
+    type: 'multiple-choice',
+    question: 'Choose the correct offer:',
+    options: [
+      'I\'ll helping you.',
+      'I help you.',
+      'I\'ll help you.',
+      'I to help you.'
+    ],
+    correctAnswer: 'I\'ll help you.',
+    explanation: '"\'ll" es la contracción de "will", usado para ofrecimientos.',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs18',
+    type: 'true-false',
+    question: 'This is correct: "They will to visit us."',
+    correctAnswer: 'false',
+    explanation: 'No usamos "to" después de "will". Correcto: "They will visit us."',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs19',
+    type: 'multiple-choice',
+    question: 'Which shows a future promise?',
+    options: [
+      'I promise I help you.',
+      'I promise I helping you.',
+      'I promise I will help you.',
+      'I promise I am help you.'
+    ],
+    correctAnswer: 'I promise I will help you.',
+    explanation: 'Future Simple con "will" para promesas.',
+    category: 'future-simple'
+  },
+  {
+    id: 'fs20',
+    type: 'fill-blank',
+    question: 'Don\'t worry, everything _____ (be) fine.',
+    correctAnswer: 'will be',
+    explanation: 'Future Simple para predicciones y asegurar algo.',
+    category: 'future-simple'
+  },
+
   // Future Continuous Questions (10)
   {
     id: 'fc1',
@@ -903,117 +1582,340 @@ export const quizQuestions: QuizQuestion[] = [
     category: 'future-continuous'
   },
 
+  // Future Continuous Questions (10 nuevas después de fc10)
+  {
+    id: 'fc11',
+    type: 'multiple-choice',
+    question: 'Choose the correct Future Continuous form:',
+    options: [
+      'This time tomorrow, I work.',
+      'This time tomorrow, I will working.',
+      'This time tomorrow, I will be working.',
+      'This time tomorrow, I be working.'
+    ],
+    correctAnswer: 'This time tomorrow, I will be working.',
+    explanation: 'Future Continuous usa "will be + verbo-ing".',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc12',
+    type: 'fill-blank',
+    question: 'At 9 PM tonight, we _____ (watch) the movie.',
+    correctAnswer: 'will be watching',
+    explanation: 'Future Continuous para acciones en progreso en un momento futuro.',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc13',
+    type: 'multiple-choice',
+    question: 'Select the correct negative:',
+    options: [
+      'I will not working tomorrow.',
+      'I won\'t be working tomorrow.',
+      'I will not be work tomorrow.',
+      'I not will be working tomorrow.'
+    ],
+    correctAnswer: 'I won\'t be working tomorrow.',
+    explanation: 'La negación usa "won\'t be + verbo-ing".',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc14',
+    type: 'true-false',
+    question: 'This is correct: "Will you be sleeping at midnight?"',
+    correctAnswer: 'true',
+    explanation: 'Preguntas usan "Will + sujeto + be + verbo-ing".',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc15',
+    type: 'multiple-choice',
+    question: 'Which shows a future action in progress?',
+    options: [
+      'I will study tomorrow.',
+      'I will be studying all day tomorrow.',
+      'I study tomorrow.',
+      'I am studying tomorrow.'
+    ],
+    correctAnswer: 'I will be studying all day tomorrow.',
+    explanation: 'Future Continuous para acciones que estarán en progreso.',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc16',
+    type: 'fill-blank',
+    question: 'This time next week, they _____ (live) in Paris.',
+    correctAnswer: 'will be living',
+    explanation: 'Future Continuous para situaciones futuras en progreso.',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc17',
+    type: 'multiple-choice',
+    question: 'Choose the correct question:',
+    options: [
+      'What will you doing tomorrow?',
+      'What will you be doing tomorrow?',
+      'What you will be doing tomorrow?',
+      'What will be you doing tomorrow?'
+    ],
+    correctAnswer: 'What will you be doing tomorrow?',
+    explanation: 'Preguntas: "will + sujeto + be + verbo-ing".',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc18',
+    type: 'true-false',
+    question: 'This is correct: "She will working all day."',
+    correctAnswer: 'false',
+    explanation: 'Falta "be". Correcto: "She will be working all day."',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc19',
+    type: 'fill-blank',
+    question: '_____ they _____ (wait) for us when we arrive?',
+    correctAnswer: ['Will', 'be waiting'],
+    explanation: 'Preguntas usan "Will + sujeto + be + verbo-ing".',
+    category: 'future-continuous'
+  },
+  {
+    id: 'fc20',
+    type: 'multiple-choice',
+    question: 'Which is the correct form?',
+    options: [
+      'Don\'t call at 8, I\'ll sleep.',
+      'Don\'t call at 8, I\'ll be sleep.',
+      'Don\'t call at 8, I\'ll be sleeping.',
+      'Don\'t call at 8, I\'ll sleeping.'
+    ],
+    correctAnswer: 'Don\'t call at 8, I\'ll be sleeping.',
+    explanation: 'Future Continuous para una acción que estará en progreso.',
+    category: 'future-continuous'
+  },
+
   // Future Perfect Questions (10)
   {
     id: 'fp1',
     type: 'multiple-choice',
     question: 'Choose the correct Future Perfect form:',
     options: [
-      'I will finished by 5pm.',
-      'I will have finish by 5pm.',
-      'I will have finished by 5pm.',
-      'I have will finished by 5pm.'
+      'By next year, I finish the project.',
+      'By next year, I will finished the project.',
+      'By next year, I will have finished the project.',
+      'By next year, I will have finish the project.'
     ],
-    correctAnswer: 'I will have finished by 5pm.',
-    explanation: 'Future Perfect uses "will have + past participle".',
+    correctAnswer: 'By next year, I will have finished the project.',
+    explanation: 'Future Perfect usa "will have + participio pasado".',
     category: 'future-perfect'
   },
   {
     id: 'fp2',
     type: 'fill-blank',
-    question: 'Complete: "By next year, she _____ (graduate) from university."',
-    correctAnswer: 'will have graduated',
-    explanation: 'Future Perfect uses "will have + past participle" for completed future actions.',
+    question: 'By 2025, they _____ (complete) the new bridge.',
+    correctAnswer: 'will have completed',
+    explanation: 'Future Perfect para acciones que estarán completadas en un punto futuro.',
     category: 'future-perfect'
   },
   {
     id: 'fp3',
     type: 'multiple-choice',
-    question: 'Select the correct negative form:',
+    question: 'Select the correct negative:',
     options: [
-      'They will not have arrived.',
-      'They won\'t arrived.',
-      'They will not arrived.',
-      'They won\'t have arrive.'
+      'We will not have finish by then.',
+      'We won\'t have finished by then.',
+      'We will not finished by then.',
+      'We won\'t having finished by then.'
     ],
-    correctAnswer: 'They will not have arrived.',
-    explanation: 'Negative in Future Perfect uses "will not have + past participle".',
+    correctAnswer: 'We won\'t have finished by then.',
+    explanation: 'La negación usa "won\'t have + participio pasado".',
     category: 'future-perfect'
   },
   {
     id: 'fp4',
     type: 'true-false',
-    question: 'This sentence is correct: "Will you have finished by then?"',
+    question: 'This is correct: "Will you have finished by tomorrow?"',
     correctAnswer: 'true',
-    explanation: 'Questions in Future Perfect start with "Will".',
+    explanation: 'Preguntas usan "Will + sujeto + have + participio pasado".',
     category: 'future-perfect'
   },
   {
     id: 'fp5',
     type: 'multiple-choice',
-    question: 'Choose the correct form:',
+    question: 'Which shows a completed future action?',
     options: [
-      'By 2025, I will worked here for 10 years.',
-      'By 2025, I will have worked here for 10 years.',
-      'By 2025, I have will worked here for 10 years.',
-      'By 2025, I will working here for 10 years.'
+      'I will study by tomorrow.',
+      'I will have studied by tomorrow.',
+      'I will be studying by tomorrow.',
+      'I have studied by tomorrow.'
     ],
-    correctAnswer: 'By 2025, I will have worked here for 10 years.',
-    explanation: 'Future Perfect uses "will have + past participle" with a future time reference.',
+    correctAnswer: 'I will have studied by tomorrow.',
+    explanation: 'Future Perfect para acciones que estarán completadas.',
     category: 'future-perfect'
   },
   {
     id: 'fp6',
     type: 'fill-blank',
-    question: 'Complete: "They _____ (complete) the project by next month."',
-    correctAnswer: 'will have completed',
-    explanation: 'Future Perfect describes actions that will be completed by a future time.',
+    question: 'By the time you arrive, I _____ (leave).',
+    correctAnswer: 'will have left',
+    explanation: 'Future Perfect para una acción que estará completa antes de otra.',
     category: 'future-perfect'
   },
   {
     id: 'fp7',
     type: 'multiple-choice',
-    question: 'Which sentence shows a completed future action?',
+    question: 'Choose the correct form:',
     options: [
-      'I will study tomorrow.',
-      'I will be studying tomorrow.',
-      'I will have studied by tomorrow evening.',
-      'I have studied by tomorrow.'
+      'She will worked for 30 years by then.',
+      'She will have work for 30 years by then.',
+      'She will have worked for 30 years by then.',
+      'She will having worked for 30 years by then.'
     ],
-    correctAnswer: 'I will have studied by tomorrow evening.',
-    explanation: 'Future Perfect is used for actions that will be completed by a future time.',
+    correctAnswer: 'She will have worked for 30 years by then.',
+    explanation: 'Future Perfect para duración hasta un punto futuro.',
     category: 'future-perfect'
   },
   {
     id: 'fp8',
     type: 'true-false',
-    question: 'This sentence is correct: "By the time you arrive, we will have eaten dinner."',
-    correctAnswer: 'true',
-    explanation: 'Future Perfect is used for actions that will be completed before another future action.',
+    question: 'This is correct: "They will had arrived by 6 PM."',
+    correctAnswer: 'false',
+    explanation: 'Incorrecto. Debe ser "will have arrived".',
     category: 'future-perfect'
   },
   {
     id: 'fp9',
-    type: 'multiple-choice',
-    question: 'Choose the correct sentence:',
-    options: [
-      'He will have write the report.',
-      'He will have wrote the report.',
-      'He will have written the report.',
-      'He will have writing the report.'
-    ],
-    correctAnswer: 'He will have written the report.',
-    explanation: 'Future Perfect uses "will have + past participle".',
+    type: 'fill-blank',
+    question: '_____ you _____ (finish) the book by Monday?',
+    correctAnswer: ['Will', 'have finished'],
+    explanation: 'Preguntas usan "Will + sujeto + have + participio pasado".',
     category: 'future-perfect'
   },
   {
     id: 'fp10',
-    type: 'fill-blank',
-    question: 'Complete: "_____ you _____ (save) enough money by then?"',
-    correctAnswer: ['Will', 'have saved'],
-    explanation: 'Questions in Future Perfect use "Will + subject + have + past participle".',
+    type: 'multiple-choice',
+    question: 'By next month, how long _____ you _____ (study) English?',
+    options: [
+      'will / study',
+      'will / have studied',
+      'will have / study',
+      'will have / been studying'
+    ],
+    correctAnswer: 'will / have studied',
+    explanation: 'Future Perfect para duración hasta un punto futuro.',
     category: 'future-perfect'
   },
+  {
+    id: 'fp11',
+    type: 'multiple-choice',
+    question: 'Choose the correct Future Perfect form:',
+    options: [
+      'By next year, I finish the project.',
+      'By next year, I will finished the project.',
+      'By next year, I will have finished the project.',
+      'By next year, I will have finish the project.'
+    ],
+    correctAnswer: 'By next year, I will have finished the project.',
+    explanation: 'Future Perfect usa "will have + participio pasado".',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp12',
+    type: 'fill-blank',
+    question: 'By 2025, they _____ (complete) the new bridge.',
+    correctAnswer: 'will have completed',
+    explanation: 'Future Perfect para acciones que estarán completadas en un punto futuro.',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp13',
+    type: 'multiple-choice',
+    question: 'Select the correct negative:',
+    options: [
+      'We will not have finish by then.',
+      'We won\'t have finished by then.',
+      'We will not finished by then.',
+      'We won\'t having finished by then.'
+    ],
+    correctAnswer: 'We won\'t have finished by then.',
+    explanation: 'La negación usa "won\'t have + participio pasado".',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp14',
+    type: 'true-false',
+    question: 'This is correct: "Will you have finished by tomorrow?"',
+    correctAnswer: 'true',
+    explanation: 'Preguntas usan "Will + sujeto + have + participio pasado".',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp15',
+    type: 'multiple-choice',
+    question: 'Which shows a completed future action?',
+    options: [
+      'I will study by tomorrow.',
+      'I will have studied by tomorrow.',
+      'I will be studying by tomorrow.',
+      'I have studied by tomorrow.'
+    ],
+    correctAnswer: 'I will have studied by tomorrow.',
+    explanation: 'Future Perfect para acciones que estarán completadas.',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp16',
+    type: 'fill-blank',
+    question: 'By the time you arrive, I _____ (leave).',
+    correctAnswer: 'will have left',
+    explanation: 'Future Perfect para una acción que estará completa antes de otra.',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp17',
+    type: 'multiple-choice',
+    question: 'Choose the correct form:',
+    options: [
+      'She will worked for 30 years by then.',
+      'She will have work for 30 years by then.',
+      'She will have worked for 30 years by then.',
+      'She will having worked for 30 years by then.'
+    ],
+    correctAnswer: 'She will have worked for 30 years by then.',
+    explanation: 'Future Perfect para duración hasta un punto futuro.',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp18',
+    type: 'true-false',
+    question: 'This is correct: "They will had arrived by 6 PM."',
+    correctAnswer: 'false',
+    explanation: 'Incorrecto. Debe ser "will have arrived".',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp19',
+    type: 'fill-blank',
+    question: '_____ you _____ (finish) the book by Monday?',
+    correctAnswer: ['Will', 'have finished'],
+    explanation: 'Preguntas usan "Will + sujeto + have + participio pasado".',
+    category: 'future-perfect'
+  },
+  {
+    id: 'fp20',
+    type: 'multiple-choice',
+    question: 'By next month, how long _____ you _____ (study) English?',
+    options: [
+      'will / study',
+      'will / have studied',
+      'will have / study',
+      'will have / been studying'
+    ],
+    correctAnswer: 'will / have studied',
+    explanation: 'Future Perfect para duración hasta un punto futuro.',
+    category: 'future-perfect'
+  },
+
 
   // Vocabulary Questions (10)
   {
@@ -1102,5 +2004,876 @@ export const quizQuestions: QuizQuestion[] = [
     correctAnswer: 'Frozen',
     explanation: 'Frozen (congelado) means very cold or turned to ice.',
     category: 'objects'
+  },
+
+  {
+    id: 'voc11',
+    type: 'multiple-choice',
+    question: 'Which is a day of the week?',
+    options: ['January', 'Monday', 'Kitchen', 'Water'],
+    correctAnswer: 'Monday',
+    explanation: 'Monday (lunes) is a day of the week.',
+    category: 'days'
+  },
+  {
+    id: 'voc12',
+    type: 'multiple-choice',
+    question: 'Which is a month of the year?',
+    options: ['Sunday', 'December', 'Morning', 'Night'],
+    correctAnswer: 'December',
+    explanation: 'December (diciembre) is a month of the year.',
+    category: 'months'
+  },
+  {
+    id: 'voc13',
+    type: 'fill-blank',
+    question: 'The opposite of day is _____.',
+    correctAnswer: 'night',
+    explanation: 'Night (noche) is the opposite of day.',
+    category: 'time'
+  },
+  {
+    id: 'voc14',
+    type: 'multiple-choice',
+    question: 'Which is a drink?',
+    options: ['Apple', 'Bread', 'Wine', 'Chair'],
+    correctAnswer: 'Wine',
+    explanation: 'Wine (vino) is a drink.',
+    category: 'drinks'
+  },
+  {
+    id: 'voc15',
+    type: 'true-false',
+    question: 'A "microwave" is a room in the house.',
+    correctAnswer: 'false',
+    explanation: 'A microwave (microondas) is an appliance, not a room.',
+    category: 'objects'
+  },
+  {
+    id: 'voc16',
+    type: 'multiple-choice',
+    question: 'Which number comes after "nineteen"?',
+    options: ['Eighteen', 'Twenty', 'Twelve', 'Fifteen'],
+    correctAnswer: 'Twenty',
+    explanation: 'Twenty (veinte) comes after nineteen.',
+    category: 'numbers'
+  },
+  {
+    id: 'voc17',
+    type: 'fill-blank',
+    question: 'A person who is your mother\'s brother is your _____.',
+    correctAnswer: 'uncle',
+    explanation: 'Uncle (tío) is your mother\'s or father\'s brother.',
+    category: 'family'
+  },
+  {
+    id: 'voc18',
+    type: 'multiple-choice',
+    question: 'Which is a piece of furniture?',
+    options: ['Table', 'Apple', 'Monday', 'Blue'],
+    correctAnswer: 'Table',
+    explanation: 'Table (mesa) is a piece of furniture.',
+    category: 'objects'
+  },
+  {
+    id: 'voc19',
+    type: 'multiple-choice',
+    question: 'What time expression means "early evening"?',
+    options: ['Morning', 'Afternoon', 'Evening', 'Night'],
+    correctAnswer: 'Evening',
+    explanation: 'Evening (noche temprano) refers to early night time.',
+    category: 'time'
+  },
+  {
+    id: 'voc20',
+    type: 'fill-blank',
+    question: 'The room where you cook food is called the _____.',
+    correctAnswer: 'kitchen',
+    explanation: 'Kitchen (cocina) is where food is prepared.',
+    category: 'rooms'
+  },
+  {
+    id: 'voc21',
+    type: 'multiple-choice',
+    question: 'Which is a breakfast drink?',
+    options: ['Beer', 'Coffee', 'Wine', 'Soap'],
+    correctAnswer: 'Coffee',
+    explanation: 'Coffee (café) is commonly drunk at breakfast.',
+    category: 'drinks'
+  },
+  {
+    id: 'voc22',
+    type: 'true-false',
+    question: 'A "bedroom" is where you cook food.',
+    correctAnswer: 'false',
+    explanation: 'A bedroom (dormitorio) is where you sleep, not where you cook.',
+    category: 'rooms'
+  },
+  {
+    id: 'voc23',
+    type: 'multiple-choice',
+    question: 'Which is a fruit?',
+    options: ['Carrot', 'Banana', 'Chicken', 'Bread'],
+    correctAnswer: 'Banana',
+    explanation: 'Banana (plátano/banana) is a fruit.',
+    category: 'food'
+  },
+  {
+    id: 'voc24',
+    type: 'fill-blank',
+    question: 'The day between Tuesday and Thursday is _____.',
+    correctAnswer: 'Wednesday',
+    explanation: 'Wednesday (miércoles) comes between Tuesday and Thursday.',
+    category: 'days'
+  },
+  {
+    id: 'voc25',
+    type: 'multiple-choice',
+    question: 'Which is a bathroom item?',
+    options: ['Toothbrush', 'Fork', 'Pillow', 'Table'],
+    correctAnswer: 'Toothbrush',
+    explanation: 'A toothbrush (cepillo de dientes) is used in the bathroom.',
+    category: 'objects'
+  },
+  {
+    id: 'voc26',
+    type: 'multiple-choice',
+    question: 'Which is the first month of the year?',
+    options: ['December', 'January', 'March', 'August'],
+    correctAnswer: 'January',
+    explanation: 'January (enero) is the first month of the year.',
+    category: 'months'
+  },
+  {
+    id: 'voc27',
+    type: 'fill-blank',
+    question: 'Your father\'s father is your _____.',
+    correctAnswer: 'grandfather',
+    explanation: 'Grandfather (abuelo) is your father\'s or mother\'s father.',
+    category: 'family'
+  },
+  {
+    id: 'voc28',
+    type: 'multiple-choice',
+    question: 'Which color is associated with the sky?',
+    options: ['Green', 'Red', 'Blue', 'Yellow'],
+    correctAnswer: 'Blue',
+    explanation: 'Blue (azul) is the color of the sky.',
+    category: 'colors'
+  },
+  {
+    id: 'voc29',
+    type: 'true-false',
+    question: 'A "living room" is where you sleep.',
+    correctAnswer: 'false',
+    explanation: 'A living room (sala de estar) is where people gather and relax, not primarily for sleeping.',
+    category: 'rooms'
+  },
+  {
+    id: 'voc30',
+    type: 'multiple-choice',
+    question: 'Which is a kitchen appliance?',
+    options: ['Bed', 'Refrigerator', 'Curtains', 'Mirror'],
+    correctAnswer: 'Refrigerator',
+    explanation: 'A refrigerator (refrigerador/nevera) is a kitchen appliance.',
+    category: 'objects'
+  },
+
+  // Vocabulary Questions (20 nuevas después de voc30)
+  {
+    id: 'voc31',
+    type: 'multiple-choice',
+    question: 'Which is a profession?',
+    options: ['Teacher', 'Window', 'Apple', 'Monday'],
+    correctAnswer: 'Teacher',
+    explanation: 'Teacher (profesor/a) es una profesión.',
+    category: 'professions'
+  },
+  {
+    id: 'voc32',
+    type: 'fill-blank',
+    question: 'The person who cuts hair is called a _____.',
+    correctAnswer: 'hairdresser',
+    explanation: 'Hairdresser (peluquero/a) es quien corta el pelo.',
+    category: 'professions'
+  },
+  {
+    id: 'voc33',
+    type: 'multiple-choice',
+    question: 'Which is a weather condition?',
+    options: ['Table', 'Sunny', 'Book', 'Car'],
+    correctAnswer: 'Sunny',
+    explanation: 'Sunny (soleado) es una condición climática.',
+    category: 'weather'
+  },
+  {
+    id: 'voc34',
+    type: 'true-false',
+    question: 'A "dentist" is someone who fixes cars.',
+    correctAnswer: 'false',
+    explanation: 'Un dentist (dentista) es quien cuida los dientes, no quien arregla coches.',
+    category: 'professions'
+  },
+  {
+    id: 'voc35',
+    type: 'multiple-choice',
+    question: 'Which is a piece of clothing?',
+    options: ['Door', 'Shirt', 'Book', 'Apple'],
+    correctAnswer: 'Shirt',
+    explanation: 'Shirt (camisa) es una prenda de vestir.',
+    category: 'clothing'
+  },
+  {
+    id: 'voc36',
+    type: 'fill-blank',
+    question: 'You wear a _____ on your feet.',
+    correctAnswer: 'shoes',
+    explanation: 'Shoes (zapatos) se usan en los pies.',
+    category: 'clothing'
+  },
+  {
+    id: 'voc37',
+    type: 'multiple-choice',
+    question: 'Which animal is a pet?',
+    options: ['Lion', 'Dog', 'Elephant', 'Giraffe'],
+    correctAnswer: 'Dog',
+    explanation: 'Dog (perro) es un animal doméstico común.',
+    category: 'animals'
+  },
+  {
+    id: 'voc38',
+    type: 'multiple-choice',
+    question: 'Which is a means of transportation?',
+    options: ['House', 'Train', 'Tree', 'Book'],
+    correctAnswer: 'Train',
+    explanation: 'Train (tren) es un medio de transporte.',
+    category: 'transportation'
+  },
+  {
+    id: 'voc39',
+    type: 'true-false',
+    question: 'A "chef" works in a hospital.',
+    correctAnswer: 'false',
+    explanation: 'Un chef trabaja en un restaurante o cocina, no en un hospital.',
+    category: 'professions'
+  },
+  {
+    id: 'voc40',
+    type: 'multiple-choice',
+    question: 'Which is a season of the year?',
+    options: ['Monday', 'Summer', 'Dinner', 'Book'],
+    correctAnswer: 'Summer',
+    explanation: 'Summer (verano) es una estación del año.',
+    category: 'seasons'
+  },
+  {
+    id: 'voc41',
+    type: 'fill-blank',
+    question: 'The opposite of "hot" is _____.',
+    correctAnswer: 'cold',
+    explanation: 'Cold (frío) es lo opuesto a hot (caliente).',
+    category: 'weather'
+  },
+  {
+    id: 'voc42',
+    type: 'multiple-choice',
+    question: 'Which is a musical instrument?',
+    options: ['Chair', 'Piano', 'Window', 'Shoe'],
+    correctAnswer: 'Piano',
+    explanation: 'Piano (piano) es un instrumento musical.',
+    category: 'music'
+  },
+  {
+    id: 'voc43',
+    type: 'multiple-choice',
+    question: 'Which is a sport?',
+    options: ['Kitchen', 'Soccer', 'Table', 'Book'],
+    correctAnswer: 'Soccer',
+    explanation: 'Soccer (fútbol) es un deporte.',
+    category: 'sports'
+  },
+  {
+    id: 'voc44',
+    type: 'true-false',
+    question: 'A "nurse" works in a restaurant.',
+    correctAnswer: 'false',
+    explanation: 'Una nurse (enfermera/o) trabaja en un hospital o clínica, no en un restaurante.',
+    category: 'professions'
+  },
+  {
+    id: 'voc45',
+    type: 'multiple-choice',
+    question: 'Which is a body part?',
+    options: ['Book', 'Hand', 'Chair', 'House'],
+    correctAnswer: 'Hand',
+    explanation: 'Hand (mano) es una parte del cuerpo.',
+    category: 'body'
+  },
+  {
+    id: 'voc46',
+    type: 'fill-blank',
+    question: 'You use your _____ to see.',
+    correctAnswer: 'eyes',
+    explanation: 'Eyes (ojos) son los órganos que usamos para ver.',
+    category: 'body'
+  },
+  {
+    id: 'voc47',
+    type: 'multiple-choice',
+    question: 'Which is a school subject?',
+    options: ['Door', 'Mathematics', 'Chair', 'Shoe'],
+    correctAnswer: 'Mathematics',
+    explanation: 'Mathematics (matemáticas) es una materia escolar.',
+    category: 'education'
+  },
+  {
+    id: 'voc48',
+    type: 'multiple-choice',
+    question: 'Which is an emotion?',
+    options: ['Table', 'Happy', 'Book', 'House'],
+    correctAnswer: 'Happy',
+    explanation: 'Happy (feliz) es una emoción.',
+    category: 'emotions'
+  },
+  {
+    id: 'voc49',
+    type: 'true-false',
+    question: 'A "doctor" teaches in a school.',
+    correctAnswer: 'false',
+    explanation: 'Un doctor trabaja en un hospital o clínica, no enseña en una escuela.',
+    category: 'professions'
+  },
+  {
+    id: 'voc50',
+    type: 'multiple-choice',
+    question: 'Which is a place in a city?',
+    options: ['Dog', 'Park', 'Shirt', 'Apple'],
+    correctAnswer: 'Park',
+    explanation: 'Park (parque) es un lugar que se encuentra en una ciudad.',
+    category: 'places'
+  },
+
+  // Agregar después de las preguntas de vocabulario existentes (después de voc50):
+  {
+    id: 'voc51',
+    type: 'multiple-choice',
+    question: 'Which is a type of footwear?',
+    options: ['T-shirt', 'Boots', 'Pants', 'Hat'],
+    correctAnswer: 'Boots',
+    explanation: 'Boots (botas) es un tipo de calzado que cubre el pie y parte de la pierna.',
+    category: 'clothing'
+  },
+  {
+    id: 'voc52',
+    type: 'fill-blank',
+    question: 'The room where you take a shower is called the _____.',
+    correctAnswer: 'bathroom',
+    explanation: 'Bathroom (baño) es donde te duchas o te bañas.',
+    category: 'rooms'
+  },
+  {
+    id: 'voc53',
+    type: 'multiple-choice',
+    question: 'Which profession works with computers and software?',
+    options: ['Chef', 'Programmer', 'Dentist', 'Firefighter'],
+    correctAnswer: 'Programmer',
+    explanation: 'Programmer (programador/a) es quien trabaja con computadoras y software.',
+    category: 'professions'
+  },
+  {
+    id: 'voc54',
+    type: 'true-false',
+    question: 'A "keyboard" is used to type on a computer.',
+    correctAnswer: 'true',
+    explanation: 'Un keyboard (teclado) se usa para escribir en una computadora.',
+    category: 'tech'
+  },
+  {
+    id: 'voc55',
+    type: 'multiple-choice',
+    question: 'Which animal can fly?',
+    options: ['Fish', 'Dog', 'Bird', 'Cat'],
+    correctAnswer: 'Bird',
+    explanation: 'Bird (pájaro/ave) es un animal que puede volar.',
+    category: 'animals'
+  },
+  {
+    id: 'voc56',
+    type: 'fill-blank',
+    question: 'The season that comes after winter is _____.',
+    correctAnswer: 'spring',
+    explanation: 'Spring (primavera) es la estación que viene después del invierno.',
+    category: 'seasons'
+  },
+  {
+    id: 'voc57',
+    type: 'multiple-choice',
+    question: 'Which is a type of public transportation?',
+    options: ['House', 'Bus', 'Television', 'Chair'],
+    correctAnswer: 'Bus',
+    explanation: 'Bus (autobús) es un tipo de transporte público.',
+    category: 'transportation'
+  },
+  {
+    id: 'voc58',
+    type: 'multiple-choice',
+    question: 'Which word describes very cold weather with snow?',
+    options: ['Rainy', 'Sunny', 'Foggy', 'Snowy'],
+    correctAnswer: 'Snowy',
+    explanation: 'Snowy (nevado) describe un clima muy frío con nieve.',
+    category: 'weather'
+  },
+  {
+    id: 'voc59',
+    type: 'true-false',
+    question: 'A "smartphone" is a type of musical instrument.',
+    correctAnswer: 'false',
+    explanation: 'Un smartphone (teléfono inteligente) es un dispositivo electrónico, no un instrumento musical.',
+    category: 'tech'
+  },
+  {
+    id: 'voc60',
+    type: 'multiple-choice',
+    question: 'Which is a typical breakfast food?',
+    options: ['Pizza', 'Eggs', 'Cake', 'Steak'],
+    correctAnswer: 'Eggs',
+    explanation: 'Eggs (huevos) son un alimento típico del desayuno.',
+    category: 'food'
+  },
+
+  {
+    id: 'voc61',
+    type: 'multiple-choice',
+    question: 'Which word means the early part of the day?',
+    options: ['Evening', 'Morning', 'Night', 'Afternoon'],
+    correctAnswer: 'Morning',
+    explanation: 'Morning (mañana) es la primera parte del día.',
+    category: 'time'
+  },
+  {
+    id: 'voc62',
+    type: 'fill-blank',
+    question: 'A day has 24 _____.',
+    correctAnswer: 'hours',
+    explanation: 'A day has 24 hours (horas).',
+    category: 'time'
+  },
+
+  // Categoría: months
+  {
+    id: 'voc63',
+    type: 'multiple-choice',
+    question: 'Which is the first month of the year?',
+    options: ['December', 'January', 'February', 'March'],
+    correctAnswer: 'January',
+    explanation: 'January (enero) es el primer mes del año.',
+    category: 'months'
+  },
+  {
+    id: 'voc64',
+    type: 'true-false',
+    question: 'December is the last month of the year.',
+    correctAnswer: 'true',
+    explanation: 'December (diciembre) es efectivamente el último mes del año.',
+    category: 'months'
+  },
+
+  // Categoría: family
+  {
+    id: 'voc65',
+    type: 'multiple-choice',
+    question: 'Your mother\'s mother is your _____.',
+    options: ['Sister', 'Aunt', 'Grandmother', 'Cousin'],
+    correctAnswer: 'Grandmother',
+    explanation: 'Grandmother (abuela) es la madre de tu madre.',
+    category: 'family'
+  },
+  {
+    id: 'voc66',
+    type: 'fill-blank',
+    question: 'Your father\'s brother is your _____.',
+    correctAnswer: 'uncle',
+    explanation: 'Uncle (tío) es el hermano de tu padre.',
+    category: 'family'
+  },
+
+  // Categoría: colors
+  {
+    id: 'voc67',
+    type: 'multiple-choice',
+    question: 'Which color is the sky on a clear day?',
+    options: ['Green', 'Red', 'Blue', 'Yellow'],
+    correctAnswer: 'Blue',
+    explanation: 'Blue (azul) es el color del cielo en un día despejado.',
+    category: 'colors'
+  },
+  {
+    id: 'voc68',
+    type: 'fill-blank',
+    question: 'A lemon is usually _____.',
+    correctAnswer: 'yellow',
+    explanation: 'Yellow (amarillo) es el color típico de un limón.',
+    category: 'colors'
+  },
+
+  // Categoría: food
+  {
+    id: 'voc69',
+    type: 'multiple-choice',
+    question: 'Which of these is a vegetable?',
+    options: ['Apple', 'Carrot', 'Chicken', 'Cheese'],
+    correctAnswer: 'Carrot',
+    explanation: 'Carrot (zanahoria) es una verdura.',
+    category: 'food'
+  },
+  {
+    id: 'voc70',
+    type: 'true-false',
+    question: 'A tomato is a type of fruit.',
+    correctAnswer: 'true',
+    explanation: 'Aunque se usa como verdura, técnicamente un tomato (tomate) es una fruta.',
+    category: 'food'
+  },
+
+  // Categoría: drinks
+  {
+    id: 'voc71',
+    type: 'multiple-choice',
+    question: 'Which is typically drunk at breakfast?',
+    options: ['Wine', 'Coffee', 'Beer', 'Vodka'],
+    correctAnswer: 'Coffee',
+    explanation: 'Coffee (café) es una bebida típica del desayuno.',
+    category: 'drinks'
+  },
+  {
+    id: 'voc72',
+    type: 'fill-blank',
+    question: 'Orange _____ is made from oranges.',
+    correctAnswer: 'juice',
+    explanation: 'Orange juice (zumo/jugo de naranja) se hace con naranjas.',
+    category: 'drinks'
+  },
+
+  // Categoría: days
+  {
+    id: 'voc73',
+    type: 'multiple-choice',
+    question: 'Which day comes after Friday?',
+    options: ['Thursday', 'Saturday', 'Sunday', 'Monday'],
+    correctAnswer: 'Saturday',
+    explanation: 'Saturday (sábado) viene después de Friday (viernes).',
+    category: 'days'
+  },
+  {
+    id: 'voc74',
+    type: 'true-false',
+    question: 'Monday is the first day of the work week.',
+    correctAnswer: 'true',
+    explanation: 'Monday (lunes) es generalmente el primer día de la semana laboral.',
+    category: 'days'
+  },
+
+  // Categoría: rooms
+  {
+    id: 'voc75',
+    type: 'multiple-choice',
+    question: 'Where do you usually cook food?',
+    options: ['Bedroom', 'Kitchen', 'Bathroom', 'Living room'],
+    correctAnswer: 'Kitchen',
+    explanation: 'Kitchen (cocina) es donde normalmente se cocina.',
+    category: 'rooms'
+  },
+  {
+    id: 'voc76',
+    type: 'fill-blank',
+    question: 'You sleep in the _____.',
+    correctAnswer: 'bedroom',
+    explanation: 'Bedroom (dormitorio) es la habitación donde duermes.',
+    category: 'rooms'
+  },
+
+  // Categoría: objects
+  {
+    id: 'voc77',
+    type: 'multiple-choice',
+    question: 'Which object do you use to write?',
+    options: ['Table', 'Book', 'Pen', 'Chair'],
+    correctAnswer: 'Pen',
+    explanation: 'Pen (bolígrafo) es un objeto para escribir.',
+    category: 'objects'
+  },
+  {
+    id: 'voc78',
+    type: 'true-false',
+    question: 'A "refrigerator" is used to keep food cold.',
+    correctAnswer: 'true',
+    explanation: 'Refrigerator (refrigerador/nevera) se usa para mantener la comida fría.',
+    category: 'objects'
+  },
+
+  // Categoría: phrasal-verbs
+  {
+    id: 'voc79',
+    type: 'multiple-choice',
+    question: 'What does "give up" mean?',
+    options: ['Start something', 'Continue trying', 'Stop trying', 'Lift something'],
+    correctAnswer: 'Stop trying',
+    explanation: '"Give up" (rendirse) significa dejar de intentar algo.',
+    category: 'phrasal-verbs'
+  },
+  {
+    id: 'voc80',
+    type: 'fill-blank',
+    question: 'When you "look _____ " something, you are searching for it.',
+    correctAnswer: 'for',
+    explanation: '"Look for" (buscar) significa buscar algo.',
+    category: 'phrasal-verbs'
+  },
+
+  // Categoría: verb-noun
+  {
+    id: 'voc81',
+    type: 'multiple-choice',
+    question: 'Which phrase means to stop and rest briefly?',
+    options: ['Take a break', 'Make a mistake', 'Have a conversation', 'Give advice'],
+    correctAnswer: 'Take a break',
+    explanation: '"Take a break" (tomar un descanso) significa parar y descansar brevemente.',
+    category: 'verb-noun'
+  },
+  {
+    id: 'voc82',
+    type: 'true-false',
+    question: '"Make a decision" means to choose something.',
+    correctAnswer: 'true',
+    explanation: '"Make a decision" (tomar una decisión) significa elegir algo.',
+    category: 'verb-noun'
+  },
+
+  // Categoría: medical
+  {
+    id: 'voc83',
+    type: 'multiple-choice',
+    question: 'Which symptom involves elevated body temperature?',
+    options: ['Cough', 'Fever', 'Sore throat', 'Runny nose'],
+    correctAnswer: 'Fever',
+    explanation: 'Fever (fiebre) implica una temperatura corporal elevada.',
+    category: 'medical'
+  },
+  {
+    id: 'voc84',
+    type: 'fill-blank',
+    question: 'A _____ is given by a doctor for medicine.',
+    correctAnswer: 'prescription',
+    explanation: 'Prescription (receta médica) es lo que te da un médico para obtener medicamentos.',
+    category: 'medical'
+  },
+
+  // Categoría: tech
+  {
+    id: 'voc85',
+    type: 'multiple-choice',
+    question: 'What connects you to the internet without cables?',
+    options: ['Browser', 'Download', 'Wi-Fi', 'Software'],
+    correctAnswer: 'Wi-Fi',
+    explanation: 'Wi-Fi te conecta a internet sin cables.',
+    category: 'tech'
+  },
+  {
+    id: 'voc86',
+    type: 'true-false',
+    question: 'A "database" is used to store information.',
+    correctAnswer: 'true',
+    explanation: 'Database (base de datos) se usa para almacenar información.',
+    category: 'tech'
+  },
+
+  // Categoría: clothing
+  {
+    id: 'voc87',
+    type: 'multiple-choice',
+    question: 'What do you wear on your feet?',
+    options: ['Hat', 'Gloves', 'Shoes', 'Tie'],
+    correctAnswer: 'Shoes',
+    explanation: 'Shoes (zapatos) se usan en los pies.',
+    category: 'clothing'
+  },
+  {
+    id: 'voc88',
+    type: 'fill-blank',
+    question: 'In cold weather, you wear a _____ to keep warm.',
+    correctAnswer: 'coat',
+    explanation: 'Coat (abrigo) es una prenda para mantener el calor en climas fríos.',
+    category: 'clothing'
+  },
+
+  // Categoría: animals
+  {
+    id: 'voc89',
+    type: 'multiple-choice',
+    question: 'Which animal says "meow"?',
+    options: ['Dog', 'Cat', 'Bird', 'Fish'],
+    correctAnswer: 'Cat',
+    explanation: 'Cat (gato) es el animal que hace "meow" (miau).',
+    category: 'animals'
+  },
+  {
+    id: 'voc90',
+    type: 'true-false',
+    question: 'An "elephant" is smaller than a "mouse".',
+    correctAnswer: 'false',
+    explanation: 'Elephant (elefante) es mucho más grande que un mouse (ratón).',
+    category: 'animals'
+  },
+
+  // Categoría: transportation
+  {
+    id: 'voc91',
+    type: 'multiple-choice',
+    question: 'Which vehicle flies in the sky?',
+    options: ['Car', 'Bus', 'Bicycle', 'Airplane'],
+    correctAnswer: 'Airplane',
+    explanation: 'Airplane (avión) es el vehículo que vuela en el cielo.',
+    category: 'transportation'
+  },
+  {
+    id: 'voc92',
+    type: 'fill-blank',
+    question: 'A _____ has two wheels and you pedal it.',
+    correctAnswer: 'bicycle',
+    explanation: 'Bicycle (bicicleta) tiene dos ruedas y se pedalea.',
+    category: 'transportation'
+  },
+
+  // Categoría: seasons
+  {
+    id: 'voc93',
+    type: 'multiple-choice',
+    question: 'In which season do leaves fall from trees?',
+    options: ['Spring', 'Summer', 'Fall/Autumn', 'Winter'],
+    correctAnswer: 'Fall/Autumn',
+    explanation: 'Fall/Autumn (otoño) es cuando las hojas caen de los árboles.',
+    category: 'seasons'
+  },
+  {
+    id: 'voc94',
+    type: 'true-false',
+    question: '"Winter" is usually the coldest season.',
+    correctAnswer: 'true',
+    explanation: 'Winter (invierno) es generalmente la estación más fría del año.',
+    category: 'seasons'
+  },
+
+  // Categoría: weather
+  {
+    id: 'voc95',
+    type: 'multiple-choice',
+    question: 'What weather condition involves water falling from clouds?',
+    options: ['Sunny', 'Rainy', 'Windy', 'Foggy'],
+    correctAnswer: 'Rainy',
+    explanation: 'Rainy (lluvioso) implica agua cayendo de las nubes.',
+    category: 'weather'
+  },
+  {
+    id: 'voc96',
+    type: 'fill-blank',
+    question: 'When it\'s _____, there is snow falling.',
+    correctAnswer: 'snowy',
+    explanation: 'Snowy (nevado) es cuando cae nieve.',
+    category: 'weather'
+  },
+
+  // Categoría: professions
+  {
+    id: 'voc97',
+    type: 'multiple-choice',
+    question: 'Who treats sick people?',
+    options: ['Teacher', 'Doctor', 'Firefighter', 'Chef'],
+    correctAnswer: 'Doctor',
+    explanation: 'Doctor (médico) es quien trata a personas enfermas.',
+    category: 'professions'
+  },
+  {
+    id: 'voc98',
+    type: 'true-false',
+    question: 'A "teacher" works in a hospital.',
+    correctAnswer: 'false',
+    explanation: 'Teacher (profesor/a) trabaja en una escuela, no en un hospital.',
+    category: 'professions'
+  },
+
+  // Categoría: emotions
+  {
+    id: 'voc99',
+    type: 'multiple-choice',
+    question: 'Which emotion describes feeling joyful?',
+    options: ['Sad', 'Angry', 'Happy', 'Scared'],
+    correctAnswer: 'Happy',
+    explanation: 'Happy (feliz) describe sentirse alegre o contento.',
+    category: 'emotions'
+  },
+  {
+    id: 'voc100',
+    type: 'fill-blank',
+    question: 'When you feel _____, you want to cry.',
+    correctAnswer: 'sad',
+    explanation: 'Sad (triste) es como te sientes cuando quieres llorar.',
+    category: 'emotions'
+  },
+
+  // Categoría: places
+  {
+    id: 'voc101',
+    type: 'multiple-choice',
+    question: 'Where do you go to borrow books?',
+    options: ['Hospital', 'Restaurant', 'Library', 'Bank'],
+    correctAnswer: 'Library',
+    explanation: 'Library (biblioteca) es donde vas a pedir prestados libros.',
+    category: 'places'
+  },
+  {
+    id: 'voc102',
+    type: 'true-false',
+    question: 'A "supermarket" is where you buy food and household items.',
+    correctAnswer: 'true',
+    explanation: 'Supermarket (supermercado) es donde compras alimentos y artículos para el hogar.',
+    category: 'places'
+  },
+
+  // Categoría: body
+  {
+    id: 'voc103',
+    type: 'multiple-choice',
+    question: 'Which body part do you use to see?',
+    options: ['Ears', 'Eyes', 'Nose', 'Mouth'],
+    correctAnswer: 'Eyes',
+    explanation: 'Eyes (ojos) son las partes del cuerpo que usas para ver.',
+    category: 'body'
+  },
+  {
+    id: 'voc104',
+    type: 'fill-blank',
+    question: 'You hear sounds with your _____.',
+    correctAnswer: 'ears',
+    explanation: 'Ears (orejas/oídos) son con lo que escuchas sonidos.',
+    category: 'body'
+  },
+
+  // Categoría: sports
+  {
+    id: 'voc105',
+    type: 'multiple-choice',
+    question: 'Which sport involves a ball and a net?',
+    options: ['Running', 'Boxing', 'Swimming', 'Tennis'],
+    correctAnswer: 'Tennis',
+    explanation: 'Tennis (tenis) involucra una pelota y una red.',
+    category: 'sports'
+  },
+  {
+    id: 'voc106',
+    type: 'true-false',
+    question: '"Soccer" and "football" refer to the same sport in most countries.',
+    correctAnswer: 'true',
+    explanation: 'Soccer y football generalmente se refieren al mismo deporte en la mayoría de los países (excepto en EE.UU.).',
+    category: 'sports'
   }
 ];

@@ -123,7 +123,7 @@ const SituationsPage: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800">{situation.title}</h2>
-          <div className="space-x-3">
+          <div className="space-x-3 space-y-3">
             <Button
               variant="outline"
               onClick={() => setSelectedSituation(null)}

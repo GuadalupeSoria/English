@@ -31,7 +31,7 @@ const VocabularyPage: React.FC = () => {
                 className="flex flex-col items-center p-4 cursor-pointer hover:bg-gray-50"
                 onClick={() => setSelectedCategory(category.id)}
               >
-                <div className="bg-primary bg-opacity-10 p-4 rounded-full mb-3">
+                <div className="bg-opacity-10 p-4 rounded-full mb-3 flex justify-center">
                   {getIconComponent(category.icon)}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800">{category.name}</h3>
